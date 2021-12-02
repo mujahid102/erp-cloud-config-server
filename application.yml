@@ -1,0 +1,15 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://103.129.200.59:9110/eureka/
+  instance:
+    hostname: 103.129.200.59
+    
+
+microservice:
+  acc-ca-service:
+    endpoints:
+      endpoint:
+        uri: http://fas-service/acc-ca/get-acc-ca-list
