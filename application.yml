@@ -8,8 +8,8 @@ eureka:
     hostname: localhost
     
 
-microservice:
-  acc-ca-service:
-    endpoints:
-      endpoint:
-        uri: http://fas-service/acc-ca/get-acc-ca-list
+#microservice:
+  #acc-ca-service:
+    #endpoints:
+      #endpoint:
+        #uri: http://fas-service/acc-ca/get-acc-ca-list
