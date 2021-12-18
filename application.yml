@@ -6,6 +6,8 @@ eureka:
       defaultZone: http://usr:pass1234@localhost:9110/eureka/
   instance:
     hostname: localhost
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 10
     
 
 #microservice:
