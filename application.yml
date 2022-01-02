@@ -3,7 +3,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://usr:pass1234@${eureka.instance.hostname}:9110/eureka/
+      defaultZone: http://usr:pass1234@103.129.200.58:9110/eureka/
   instance:
     #hostname: localhost
     leaseRenewalIntervalInSeconds: 5
