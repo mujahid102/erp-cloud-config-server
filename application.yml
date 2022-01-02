@@ -5,7 +5,7 @@ eureka:
     service-url:
       defaultZone: http://usr:pass1234@103.129.200.58:9110/eureka/
   instance:
-    hostname: localhost
+    #hostname: localhost
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 10
     
