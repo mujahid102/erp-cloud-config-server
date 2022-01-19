@@ -4,8 +4,11 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://usr:pass1234@103.129.200.58:9110/eureka/
+      #defaultZone: http://usr:{bcrypt}$2a$10$oKESzh.bq.u7mqR977ej4ON.JhHEgTZhPAEV7FjX1EDejLdnDpxFK@103.129.200.58:9110/eureka/
   instance:
     #hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${server.port}
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 10
     
