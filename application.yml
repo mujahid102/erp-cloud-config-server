@@ -6,9 +6,9 @@ eureka:
       defaultZone: http://usr:pass1234@localhost:9110/eureka/
       #defaultZone: http://usr:pass1234@103.129.200.58:9110/eureka/
   instance:
-    #hostname: localhost
-    #prefer-ip-address: true
-    #instance-id: ${eureka.instance.hostname}:${server.port}
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${server.port}
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 10
     
