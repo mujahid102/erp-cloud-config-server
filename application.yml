@@ -8,6 +8,7 @@ eureka:
   instance:
     hostname: 103.129.200.58
     preferIpAddress: true
+    ip-address: ${server.address}
     instance-id: ${eureka.instance.hostname}:${server.port}
     leaseRenewalIntervalInSeconds: 10
     leaseExpirationDurationInSeconds: 10
